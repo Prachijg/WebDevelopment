@@ -1,0 +1,310 @@
+.lgreen{
+    background-color: #93B1A6;
+
+}
+.mgreen{
+    background-color: #5C8374;
+}
+.dgreen{
+    background-color: #183D3D;
+}
+.black{
+    background-color:#040D12;
+}
+.navigate{
+   
+    display: flex;
+    height:30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    gap:10px;
+    align-items: center;
+    align-content: center;
+}
+.options{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.op{
+    text-decoration: none;
+    color: white;
+}
+.op:hover{
+    color:#93B1A6;
+}
+#lastop{
+    padding-right: 10px;
+}
+
+.push{
+    margin-left: auto;
+}
+#name{
+    padding-left: 10px;
+}
+.page1{
+    background-color: #040D12;
+    height:768px;
+    padding: 0%;
+    margin:0%;
+}
+#firstline{
+    text-align: center;
+    color: #5C8374;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Trispace', sans-serif;
+}
+#secondline{
+    text-align: center;
+    color: #93B1A6;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: relative;
+    align-items: center;
+    font-family: 'Trispace', sans-serif;
+}
+#intro{
+    height: 500px;
+   justify-content: center;
+   align-self: center;
+   align-content: center;
+   align-items: center;
+    padding-top:200px;
+}
+#firstline span::before{
+    content:"Hello I'm";
+    
+    animation:animate infinite 6s;
+    
+    
+}
+@keyframes animate{
+    0%{
+        content:"Hello I'm";
+        opacity: 0%;
+    }
+    25%{
+        opacity:100%;
+        content:"Hello I'm";
+    }
+    50%{
+        opacity: 0%;
+        content:"Hello I'm";
+    }
+    51%{
+        opacity: 0%;
+        content:"a student";
+    }
+    75%{
+        opacity:100%;
+        content:"a student";
+    }
+
+    100%{
+        content:"a student";
+        opacity: 0%;
+    }
+}
+#secondline span::before{
+    content:"PRACHI GOPSITKAR";
+    
+    animation:animate1 infinite 6s;
+    
+}
+@keyframes animate1{
+    0%{
+        content:"PRACHI GOPSITKAR";
+        opacity: 0%;
+    }
+    25%{
+        opacity:100%;
+        content:"PRACHI GOPSITKAR";
+    }
+    50%{
+        opacity: 0%;
+        content:"PRACHI GOPSITKAR";
+    }
+    51%{
+        opacity: 0%;
+        content:"from Bangalore";
+    }
+    75%{
+        opacity:100%;
+        content:"from Bangalore";
+    }
+
+    100%{
+        content:"from Bangalore";
+        opacity: 0%;
+    }
+}
+body{
+    margin: 0%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.prof-img{
+    border-radius: 50%;
+    width:70px;
+    padding: 20px;
+   
+
+}
+#profname{
+    padding: 10px;
+    font-size: larger;
+    color:#93B1A6;
+    
+    
+}
+.page2{
+    background-color: #040D12;
+    height:500px;
+}
+.page3{
+    background-color: #040D12;
+    height:500px;
+}
+.page4{
+    background-color: #040D12;
+    height:500px;
+}
+.page5{
+    background-color:#183D3D;
+    height:300px;
+}
+.heading{
+    color: #93B1A6;
+    text-align: center;
+    font-size: xx-large;
+    padding-bottom: 20px;;
+
+}
+.abtmediv{
+    display:flex;
+   
+}
+.mainimg{
+    height:300px;
+    padding-left:100px;
+    border-radius: 50%;
+    padding-top: 50px;
+    
+}
+
+footer{
+    text-align: center;
+    color: #5C8374;
+    padding-top: 30px;
+}
+.call-email
+{
+    text-decoration: none;
+    color: #93B1A6;
+    font-size: 40px;
+
+
+}
+.email{
+    text-align: center;
+    padding-top: 10px;
+}
+.iconsize{
+    height:60px;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.abtme{
+    background-color: #183D3D;
+    width:700px;
+    height: 400px;
+    border-radius: 3%;
+    color: #93B1A6;
+    font-size: larger;
+    padding: 30px;
+    align-items: center;
+    padding-top: 60px;
+}
+.abtmecontent{
+    display: flex;
+    gap:30px;
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    height:350px;
+    perspective: 800px;
+    
+
+}
+.card{
+    width:23%;
+    height:100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    background-image: linear-gradient(to bottom right,#93B1A6,#183D3D);
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+    
+    
+}
+.front,.back{
+    width:100%;
+    height:100%;
+    box-shadow: 0 0 2px 5px rgba(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    color: white;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+    text-align: center;
+    
+    
+    
+}
+.card li{
+    list-style: none;
+    
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+   
+
+}
+.card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg) ;
+    
+}
+.back{
+    transform: rotateY(180deg);
+}
+.card ul{
+    align-items: center;
+    justify-content: center;
+   
+}
